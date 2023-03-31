@@ -1,8 +1,22 @@
 Q1. Why do we call Python as a general purpose and high-level programming language?
 
+>> Python is called general purpose because it can be used to design and develop various applications in several domains. High level programming language means more
+   user friendly. Programming with Python is like writing story in English.
+   
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Q2. Why is Python called a dynamically typed language?
 
+>>> A dynamically typed language means that variables are only checked by type when the program is run. We don't need to declare variable type, interpreter interprets
+    it automatically.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Q3. List some pros and cons of Python programming language?
+
+>>>
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Q4. In what all domains can we use Python?
 
