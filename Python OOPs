@@ -1,0 +1,191 @@
+## Python OOP Assignment
+
+Q1. What is the purpose of Python's OOP?
+>>> OOPs in python is defined as Object Oriented Programming.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q2. Where does an inheritance search look for an attribute?
+>>> An inheritance search looks for an attribute first in the instance object, then in the class the instance was created from, then in all higher superclasses,
+    progressing from left to right (by default).
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q3. How do you distinguish between a class object and an instance object?
+>>> A class is a type of blueprint that you can use to make objects. A concrete 'thing' that you constructed using a certain class is an object, which is an instance
+    of a class.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q4. What makes the first argument in a class’s method function special?
+
+>>> A class method is similar to an instance method, but it has a class object passed as its first argument.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q5. What is the purpose of the init method?
+
+>>> The __init__ method lets the class initialize the object's attributes and serves no other purpose. It is only used within classes
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q6. What is the process for creating a class instance?
+>>> The __init__ method lets the class initialize the object's attributes and serves no other purpose. It is only used within classes.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q7. What is the process for creating a class?
+>>> To create instances of a class, you call the class using class name and pass in whatever arguments its __init__ method accepts.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q8. How would you define the superclasses of a class?
+>>> A class that is derived from another class is called a subclass (also a derived class, extended class, or child class). The class from which the subclass is
+    derived is called a superclass (also a base class or a parent class).
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q9. What is the relationship between classes and modules?
+>>> Modules are collections of methods and constants. They cannot generate instances. Classes may generate instances (objects), and have per-instance state
+    (instance variables).
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q10. How do you make instances and classes?
+>>> To create instances of a class, you call the class using class name and pass in whatever arguments its __init__ method accepts.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q11. Where and how should be class attributes created?
+>>> To define a class attribute, you place it outside of the __init__() method. Use class_name. class_attribute or object_name. class_attribute to access the value of
+    the class_attribute .
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q12. Where and how are instance attributes created?
+>>> Instance attributes are defined in the constructor. Defined directly inside a class. Defined inside a constructor using the self parameter. Shared across all
+    objects.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q13. What does the term "self" in a Python class mean?
+>>>  The python __init__ method is declared within a class and is used to initialize the attributes of an object as soon as the object is formed. While giving the
+     definition for an __init__(self) method, a default parameter, named 'self' is always passed in its argument. This self represents the object of the class itself.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q14. How does a Python class handle operator overloading?
+>>> In Python, we can change the way operators work for user-defined types.
+    For example, the + operator will perform arithmetic addition on two numbers, merge two lists, or concatenate two strings.
+    This feature in Python that allows the same operator to have different meaning according to the context is called operator overloading.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q15. When do you consider allowing operator overloading of your classes?
+>>> When one or both operands are of a user-defined class or structure type, operator overloading makes it easier to specify user-defined implementation for such
+    operations.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q16. What is the most popular form of operator overloading?
+>>> The most frequent instance is the adding up operator '+', where it can be used for the usual addition and also for combining two different strings.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q17. What are the two most important concepts to grasp in order to comprehend Python OOP code?
+>>> Both inheritance and polymorphism are fundamental concepts of object oriented programming.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q18. Describe three applications for exception processing.
+>>> Exception handling is the process of responding to unwanted or unexpected events when a computer program runs. Exception handling deals with these events to avoid
+    the program or system crashing, and without this process, exceptions would disrupt the normal operation of a program.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q19. What happens if you don't do something extra to treat an exception?
+>>> 
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q20. What are your options for recovering from an exception in your script?
+>>> 
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q21. Describe two methods for triggering exceptions in your script.
+>>>
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q22. Identify two methods for specifying actions to be executed at termination time, regardless of  
+whether or not an exception exists.
+
+>>> 
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q23. What is the purpose of the try statement?
+>>>
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q24. What are the two most popular try statement variations?
+>>>
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q25. What is the purpose of the raise statement?
+>>>
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q26. What does the assert statement do, and what other statement is it like?
+>>>
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q27. What is the purpose of the with/as argument, and what other statement is it like?
+>>>
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q28. What are *args, **kwargs?
+>>>
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q29. How can I pass optional or keyword parameters from one function to another?
+>>>
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q30. What are Lambda Functions?
+>>>
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q31. Explain Inheritance in Python with an example?
+>>> 
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q32. Suppose class C inherits from classes A and B as class C(A,B).Classes A and B both have their own versions of method func(). If we call func() from an object of 
+     class C, which version gets invoked?
+
+>>> 
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q33. Which methods/functions do we use to determine the type of instance and inheritance?
+>>> 
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q34.Explain the use of the 'nonlocal' keyword in Python.
+>>> 
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q35. What is the global keyword?
+>>> 
