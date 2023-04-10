@@ -209,31 +209,40 @@ Q29. How can I pass optional or keyword parameters from one function to another?
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Q30. What are Lambda Functions?
->>>
+
+>>> A lambda function is a small anonymous function. A lambda function can take any number of arguments, but can only have one expression.
+    x = lambda a : a + 10
+    print(x(5))
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Q31. Explain Inheritance in Python with an example?
->>> 
+>>> Inheritance allows us to define a class that inherits all the methods and properties from another class. Parent class is the class being inherited from, also
+    called base class. Child class is the class that inherits from another class, also called derived class.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Q32. Suppose class C inherits from classes A and B as class C(A,B).Classes A and B both have their own versions of method func(). If we call func() from an object of 
+Q32. Suppose class C inherits from classes A and B as class C(A,B). Classes A and B both have their own versions of method func(). If we call func() from an object of 
      class C, which version gets invoked?
 
->>> 
+>>> Class A and B. Because Class C has derieved its inheritence from Class A and B.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Q33. Which methods/functions do we use to determine the type of instance and inheritance?
->>> 
+
+>>> Class x:
+        def __init__(A, B, C):
+        A.x = B
+        A.y = C
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Q34.Explain the use of the 'nonlocal' keyword in Python.
->>> 
+>>> The nonlocal keyword is used to work with variables inside nested functions, where the variable should not belong to the inner function. Use the keyword nonlocal
+    to declare that the variable is not local.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Q35. What is the global keyword?
->>> 
+>>> The global keyword is used to create global variables from a no-global scope, e.g. inside a function.
