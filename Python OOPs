@@ -104,59 +104,107 @@ Q18. Describe three applications for exception processing.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Q19. What happens if you don't do something extra to treat an exception?
->>> 
+>>> When an exception occurred, if you don't handle it, the program terminates abruptly and the code past the line that caused the exception will not get executed.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Q20. What are your options for recovering from an exception in your script?
->>> 
+>>> If the assertion fails, Python uses ArgumentExpression as the argument for the AssertionError. AssertionError exceptions can be caught and handled like any other
+    exception using the try-except statement, but if not handled, they will terminate the program and produce a traceback.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Q21. Describe two methods for triggering exceptions in your script.
->>>
+>>> To avoid such a scenario, there are two methods to handle Python exceptions: Try – This method catches the exceptions raised by the program. Raise – Triggers an
+    exception manually using custom exceptions.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Q22. Identify two methods for specifying actions to be executed at termination time, regardless of  
-whether or not an exception exists.
+     whether or not an exception exists.
 
 >>> 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Q23. What is the purpose of the try statement?
->>>
+
+>>> During the execution of the try statement, if no exceptions occurred then, the interpreter ignores the exception handlers for that specific try statement.
+    In case, if any exception occurs in a try suite, the try suite expires and program control transfers to the matching except handler following the try suite.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Q24. What are the two most popular try statement variations?
->>>
+
+>>> The “try” and “else” statements are used in Python for flow control.
+    An Exception, also known as run time error, is an event which occurs during the execution of a Python program. When that error occurs, it interrupts the Python
+    program and generates an error message by printing a “Traceback” to the console with information about the exception and how it was raised.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Q25. What is the purpose of the raise statement?
->>>
+
+>>> The raise keyword in Python is mainly used for exception handling. Exception handling handles exceptions or errors so that the system does not malfunction due to
+    incorrect code.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Q26. What does the assert statement do, and what other statement is it like?
->>>
+
+>>> The assert keyword is used when debugging code. The assert keyword lets you test if a condition in your code returns True, if not, the program will raise an
+    AssertionError. You can write a message to be written if the code returns False. For ex:
+   
+    x = "hello"
+
+    #if condition returns False, AssertionError is raised:
+    assert x == "goodbye", "x should be 'hello'"
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Q27. What is the purpose of the with/as argument, and what other statement is it like?
->>>
+
+>>> In Python, the with statement replaces a try-catch block with a concise shorthand. More importantly, it ensures closing resources right after processing them.
+    A common example of using the with statement is reading or writing to a file. A function or class that supports the with statement is known as a context manager.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Q28. What are *args, **kwargs?
->>>
+
+>>> *args allows you to pass the desired number of arguments to the function. Args generally means arguments in this case. Example:
+
+    #*args for variable number of arguments
+    def myFun(*argv):
+    for arg in argv:
+    print (arg)
+
+    myFun('Hello', 'Welcome', 'to', 'iNeuron.ai')
+    Output:
+    Hello
+    Welcome
+    to
+    iNeuron.ai
+    
+    **kwargs in function definitions in python is used to pass a keyworded, variable-length argument list. We use the name kwargs with the double star. The reason is
+      because the double star allows us to pass through keyword arguments (and any number of them). A keyword argument is where you provide a name to the variable as
+      you pass it into the function.
+      for ex: # *kargs for variable number of keyword arguments
+                def myFun(**kwargs):
+                for key, value in kwargs.items():
+                print ("%s == %s" %(key, value))
+      
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Q29. How can I pass optional or keyword parameters from one function to another?
->>>
+
+>>> The * and ** specifiers in the function's parameter list. This gives us positional arguments as a tuple and the keyword arguments as a dictionary. Then we can
+    pass these arguments while calling another function by using * and **:
+    
+        def fun1(a, *tup, **keywordArg):
+        ...
+        keywordArg['width']='23.3c'
+        ...
+        Fun2(a, *tup, **keywordArg)
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
